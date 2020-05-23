@@ -421,8 +421,9 @@ public class Main {
 
                                                     break ;
                                                 case "Remove":
-                                                    System.out.println("Name(-1 to return): ");
+
                                                     while (true) {
+                                                        System.out.println("Name(-1 to return): ");
                                                          String removedStaffName = scanner.next();
                                                         if (removedStaffName.equals("-1")) break;
 
