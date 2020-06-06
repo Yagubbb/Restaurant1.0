@@ -113,7 +113,7 @@ public class Main {
         ArrayList<Double> lstReport = new ArrayList<>();
 
         int dayNumber = 0;
-        try (Stream<Path> files = Files.list(Paths.get("C:\\Users\\User\\IdeaProjects\\Restaurant\\src\\Days"))) {
+        try (Stream<Path> files = Files.list(Paths.get("src/Days"))) {
             dayNumber = (int) files.count();
         } catch (IOException e) {
             e.printStackTrace();

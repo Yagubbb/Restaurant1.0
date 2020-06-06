@@ -73,7 +73,7 @@ public class Helper {
 
         String n = Integer.toString(dayNumber);
         try {
-            FileWriter fileWriter = new FileWriter("C:\\Users\\User\\IdeaProjects\\Restaurant\\src\\Days\\day" + n + ".json");
+            FileWriter fileWriter = new FileWriter("src/Days/day" + n + ".json");
             fileWriter.write(report);
             fileWriter.flush();
             fileWriter.close();
@@ -134,7 +134,7 @@ public class Helper {
 
         System.out.println("\nAll reports");
         for (int a = 1; a < dayNumber; a++) {
-            File dayFile = new File("C:\\Users\\User\\IdeaProjects\\Restaurant\\src\\Days\\day" + a + ".json");
+            File dayFile = new File("src/Days/day" + a + ".json");
             FileReader reader = new FileReader(dayFile.getAbsolutePath());
             Object obj = parser.parse(reader);
             JSONObject jsonObj = (JSONObject) obj;
@@ -149,7 +149,7 @@ public class Helper {
                 if (dayChoice.equals("-1") || dayChoice.equals("Back"))
                     break dayLabel;
 
-                File dayFile = new File("C:\\Users\\User\\IdeaProjects\\Restaurant\\src\\Days\\day" + dayChoice + ".json");
+                File dayFile = new File("src/Days/day" + dayChoice + ".json");
                 FileReader reader = new FileReader(dayFile.getAbsolutePath());
                 Object obj = parser.parse(reader);
                 JSONObject jsonObject = (JSONObject) obj;
